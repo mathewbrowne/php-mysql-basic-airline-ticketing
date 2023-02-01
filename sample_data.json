@@ -1,0 +1,39 @@
+// CREATE
+
+// Should work
+
+{
+  "passport":"123456789",
+  "departure":"2023-02-01 06:00:00",
+  "source":"CWL",
+  "destination":"ARN"
+}
+
+// Flight full
+
+{
+  "passport":"987654321",
+  "departure":"2023-02-02 09:00:00",
+  "source":"LHR",
+  "destination":"LAX"
+}
+
+// CANCEL
+
+{
+  "passport":"987654321",
+  "departure":"2023-02-02 09:00:01",
+  "source":"LHR",
+  "destination":"LAX",
+  "seat":"26"
+}
+
+// CHANGE
+
+{
+  "passport":"987654321",
+  "departure":"2023-02-02 09:00:01",
+  "source":"LHR",
+  "destination":"LAX",
+  "seat":"26"
+}

@@ -1,8 +1,9 @@
 <?php
+
   $db_host = 'localhost';
   $db_user = 'root';
   $db_password = 'root';
-  $db_db = 'information_schema';
+  $db_db = 'fr24';
 
   $mysqli = @new mysqli(
     $db_host,
@@ -18,11 +19,6 @@
     exit();
   }
 
-  echo 'Success: A proper connection to MySQL was made.';
-  echo '<br>';
-  echo 'Host information: '.$mysqli->host_info;
-  echo '<br>';
-  echo 'Protocol version: '.$mysqli->protocol_version;
+  mysqli_set_charset($mysqli, "utf8");
 
-  $mysqli->close();
 ?>
