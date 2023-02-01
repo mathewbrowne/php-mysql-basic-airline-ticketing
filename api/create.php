@@ -18,6 +18,11 @@ These are the required headers for JSON response
 include_once '../inc/headers.php';
 
 /*
+Functions
+*/
+include_once '../inc/functions.php';
+
+/*
 Open MySQL connection and create MySQLi instance with value $mysqli.
 */
 include_once '../inc/db_open.php';
@@ -58,6 +63,16 @@ try {
       http_response_code(401);
       echo json_encode(array(
           "message" => "Timestamp is empty"
+      ));
+      exit();
+  }
+  /*
+  Error handling - timestamp is not valid.
+  */
+  if(!isValidTimeStamp($departure)){
+      http_response_code(401);
+      echo json_encode(array(
+          "message" => "Timestamp is not valid"
       ));
       exit();
   }
