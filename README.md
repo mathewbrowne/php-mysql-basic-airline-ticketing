@@ -1,8 +1,10 @@
-# Coding challenge - basic airline ticketing system
+# Coding challenge - basic airline ticketing API
 
 ## Using PHP and MySQL
 
 ticket.sql contains the MySQL table used to store tickets, plus some dummy data
+
+sample_data.json gives some examples of valid JSON data that the API can accept
 
 ## How to run this locally
 
@@ -58,3 +60,7 @@ When a ticket is successfully created, the response will look as follows
     "ticket_id": 117,
     "seat": 23
 }
+
+## Testing the API
+
+I use Postman for API testing. If testing locally you will require the desktop version available at https://www.postman.com/downloads/
