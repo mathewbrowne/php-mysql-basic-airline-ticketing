@@ -8,16 +8,16 @@ sample_data.json gives some examples of valid JSON data that the API can accept
 
 ## How to run this locally
 
-This presumes you have LAMP or MAMP running on your local machine.
+You will require a LAMP or MAMP environment running on your local machine. You may wish to use MAMP for Mac (https://www.mamp.info) or WAMP for Windows (https://www.wampserver.com/en/)
 
 Replace the $db_host, $db_user and $db_password variables in inc/db_open.php with the credentials from your local environment.
 
-In your local MySQL instance, create a new database called fr24 or use this command:
+In your local MySQL instance, create a new database called fr24 or use this SQL command:
 CREATE DATABASE fr24 CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 Import file ticket.sql to create the MySQL table used to store tickets, plus some dummy data.
 
-Set your machine's server root to the /fr24 directory and you will be able to access the api endpoints via the URLs
+Set your machine's server root to the /fr24 directory and you will be able to access the api endpoints via these URLs:
 
 /api/create.php
 
