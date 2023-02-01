@@ -20,7 +20,9 @@ Import file ticket.sql to create the MySQL table used to store tickets, plus som
 Set your machine's server root to the /fr24 directory and you will be able to access the api endpoints via the URLs
 
 /api/create.php
+
 /api/cancel.php
+
 /api/change.php
 
 For example if you're using MAMPserver locally on port 8888, the create API endpoint is accessed at http://localhost:8888/api/create.php
