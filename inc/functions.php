@@ -2,9 +2,13 @@
 
 function isValidTimeStamp($timestamp)
 {
-    return ((string) (int) $timestamp === $timestamp)
-        && ($timestamp <= PHP_INT_MAX)
-        && ($timestamp >= ~PHP_INT_MAX);
+
+  if (DateTime::createFromFormat('Y-m-d H:i:s', $timestamp) !== false) {
+    return true;
+  } else {
+    return false;
+  }
+
 }
 
 ?>
