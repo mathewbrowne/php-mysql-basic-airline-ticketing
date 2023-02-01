@@ -23,7 +23,11 @@ Set your machine's server root to the /fr24 directory and you will be able to ac
 /api/cancel.php
 /api/change.php
 
+For example if you're using MAMPserver locally on port 8888, the create API endpoint is accessed at http://localhost:8888/api/create.php
+
 ## Interacting with the API
+
+I use Postman for API testing. If testing locally you will require the desktop version available at https://www.postman.com/downloads/
 
 ### Create a ticket
 
@@ -60,7 +64,3 @@ When a ticket is successfully created, the response will look as follows
     "ticket_id": 117,
     "seat": 23
 }
-
-## Testing the API
-
-I use Postman for API testing. If testing locally you will require the desktop version available at https://www.postman.com/downloads/
