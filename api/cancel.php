@@ -29,7 +29,7 @@ $data = json_decode(file_get_contents("php://input"));
 
 //print_r( $data );
 
-
+try{
 
   /*
   Assign data to variables.
@@ -167,7 +167,19 @@ $data = json_decode(file_get_contents("php://input"));
   $stmt->close();
 
 
+}
 
+catch (Exception $e){
+
+  /*
+  Something else went wrong
+  */
+
+  http_response_code(401);
+  echo json_encode(array(
+      "message" => "Error"
+  ));
+}
 
 
 /*
